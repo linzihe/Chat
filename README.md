@@ -447,6 +447,22 @@ To try the Chat examples:
 - Open `ChatExample.xcodeproj` or `ChatFirestoreExample.xcodeproj` in the Xcode
 - Try it!
 
+### DeepSeek 集成配置
+
+`ChatExample` 现在包含一个基于 DeepSeek API 的聊天演示。要正常运行该示例，请提供可用的 DeepSeek API Key：
+
+1. 在运行应用前，将密钥写入环境变量：
+
+   ```bash
+   export DEEPSEEK_API_KEY="your_api_key_here"
+   ```
+
+   Xcode 用户可以在 `Edit Scheme… > Run > Arguments` 中添加同名环境变量。
+
+2. 或者在手动创建 `DeepSeekAPIClient` 时，通过初始化方法传入 `apiKey` 参数。
+
+如果未配置密钥，应用会在聊天界面给出提示，并在发送消息时返回“未提供 DeepSeek API Key”的错误信息。
+
 ## Installation
 
 ### [Swift Package Manager](https://swift.org/package-manager/)
@@ -456,6 +472,17 @@ dependencies: [
     .package(url: "https://github.com/exyte/Chat.git")
 ]
 ```
+
+## Running Tests
+
+The package includes unit tests for the core `ExyteChat` target. Run them with:
+
+```
+swift test
+```
+
+> [!NOTE]
+> `swift test` fetches third-party dependencies declared in `Package.swift` from GitHub. In environments where outbound network access is blocked (for example, the hosted evaluation sandbox used for this project), Swift Package Manager cannot download those repositories and the test command fails with an error similar to “repository dependencies cannot be fetched because outbound network access is blocked.” Run the tests on a network-enabled machine or prefetch the dependencies on an allowlisted build server to avoid this failure.
 
 ## Requirements
 
