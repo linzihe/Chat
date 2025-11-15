@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章合集 - 墨迹博客</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="logo" href="index.html">墨迹博客</a>
+            <nav class="site-nav" aria-label="主导航">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="展开导航">
+                    <span class="nav-toggle__line"></span>
+                    <span class="nav-toggle__line"></span>
+                    <span class="nav-toggle__line"></span>
+                </button>
+                <ul id="primary-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a class="is-active" href="post.html">最新文章</a></li>
+                    <li><button id="themeToggle" type="button">🌙 夜间模式</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container posts">
+            <aside class="posts__sidebar" aria-label="文章分类">
+                <h2>分类</h2>
+                <ul>
+                    <li><button class="filter-button is-active" data-filter="all">全部</button></li>
+                    <li><button class="filter-button" data-filter="design">设计</button></li>
+                    <li><button class="filter-button" data-filter="swiftui">SwiftUI</button></li>
+                    <li><button class="filter-button" data-filter="creative">创作</button></li>
+                </ul>
+            </aside>
+
+            <section class="posts__content">
+                <article id="design-system" class="post" data-category="design">
+                    <header>
+                        <p class="post__meta">设计 · 2024年3月18日 · 阅读 8 分钟</p>
+                        <h1>用组件化思维打造统一的设计语言</h1>
+                    </header>
+                    <p>在大型团队中，设计与开发常常由于沟通成本过高而步调不一致。组件化思维要求我们把 UI 拆分为可复用的最小单位，并为其定义规范的状态、交互与适配策略。当这些组件形成设计系统后，产品体验的统一性大幅提升，迭代效率也随之提高。</p>
+                    <h2>从视觉碎片到系统化表达</h2>
+                    <p>开始设计系统时，可以从最常用的交互组件入手，例如按钮、输入框、卡片等。为组件列出所有状态——默认、悬停、点击、禁用等，再明确尺寸与留白规则。这些细节在交付开发时可以减少猜测，帮助前端快速实现。</p>
+                </article>
+
+                <article id="swiftui-effects" class="post" data-category="swiftui">
+                    <header>
+                        <p class="post__meta">SwiftUI · 2024年2月27日 · 阅读 6 分钟</p>
+                        <h1>SwiftUI 动画：从入门到沉浸式体验</h1>
+                    </header>
+                    <p>SwiftUI 通过声明式语法让动画实现更加直观。借助 <code>matchedGeometryEffect</code>、<code>.animation</code> 和可组合的 <code>transition</code>，可以轻松创建流畅的页面过渡。本文以案例展示如何构建卡片切换、滚动视差和微交互提示。</p>
+                    <h2>定义动画阶段</h2>
+                    <p>良好的动画应该服务于信息结构。先明确动画的目的，是突出重点还是建立层级，再选择合适的缓动函数与时长。</p>
+                </article>
+
+                <article id="ai-writing" class="post" data-category="creative">
+                    <header>
+                        <p class="post__meta">创作 · 2024年1月12日 · 阅读 7 分钟</p>
+                        <h1>如何让 AI 成为创作搭档</h1>
+                    </header>
+                    <p>AI 工具的出现让内容创作者拥有了效率倍增的助手。通过提示工程，我们可以在选题阶段收集多角度观点，在写作过程中快速生成提纲与段落结构。但最终的文字依然需要创作者审阅与润色，以保持风格一致性与情感表达。</p>
+                    <h2>建立创作流程</h2>
+                    <p>将灵感捕捉、素材整理、写作、复盘拆分为可重复的步骤。AI 可以辅助灵感拓展和初稿撰写，而人类创作者则专注于判断与表达。</p>
+                </article>
+
+                <section id="comments" class="comments">
+                    <h2>读者留言</h2>
+                    <form class="comments__form" action="#" method="post">
+                        <div class="field">
+                            <label for="name">昵称</label>
+                            <input id="name" name="name" type="text" required>
+                        </div>
+                        <div class="field">
+                            <label for="message">留言</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit">发送留言</button>
+                    </form>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__content">
+            <p>© 2024 墨迹博客</p>
+            <div class="site-footer__links">
+                <a href="index.html">返回首页</a>
+                <a href="about.html">关于作者</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

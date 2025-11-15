@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于墨迹博客</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="logo" href="index.html">墨迹博客</a>
+            <nav class="site-nav" aria-label="主导航">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="展开导航">
+                    <span class="nav-toggle__line"></span>
+                    <span class="nav-toggle__line"></span>
+                    <span class="nav-toggle__line"></span>
+                </button>
+                <ul id="primary-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a class="is-active" href="about.html">关于</a></li>
+                    <li><a href="post.html">最新文章</a></li>
+                    <li><button id="themeToggle" type="button">🌙 夜间模式</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <h1>关于作者</h1>
+            <p>你好，我是林墨，一名热衷产品体验与内容创作的独立开发者。过去几年，我在互联网企业负责移动端体验设计与前端工程化落地，见证了从概念到产品的全流程。现在，我专注于打造优雅的工具产品，同时在墨迹博客记录创作过程中的灵感与反思。</p>
+
+            <h2>创作理念</h2>
+            <ul class="list">
+                <li><strong>务实：</strong>文章以实践为主，避免空洞概念。</li>
+                <li><strong>审美：</strong>代码与文字都值得被精心打磨。</li>
+                <li><strong>共享：</strong>好的经验和思考应该被更多人看见。</li>
+            </ul>
+
+            <h2>技能栈</h2>
+            <div class="grid grid--skills">
+                <div class="skill">
+                    <h3>前端与移动</h3>
+                    <p>React、Vue、SwiftUI、Kotlin Compose</p>
+                </div>
+                <div class="skill">
+                    <h3>设计系统</h3>
+                    <p>设计规范、组件库、设计工具自动化</p>
+                </div>
+                <div class="skill">
+                    <h3>内容创作</h3>
+                    <p>长文写作、播客策划、课程设计</p>
+                </div>
+            </div>
+
+            <section class="section">
+                <h2>合作与联系</h2>
+                <p>欢迎合作演讲、培训或内容共创。请通过邮箱 <a href="mailto:hello@example.com">hello@example.com</a> 联系我，或在社交媒体上私信。</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__content">
+            <p>© 2024 墨迹博客</p>
+            <div class="site-footer__links">
+                <a href="index.html">返回首页</a>
+                <a href="post.html#comments">读者反馈</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

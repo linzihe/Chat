@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>墨迹博客 | 记录思想与灵感</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="logo" href="index.html">墨迹博客</a>
+            <nav class="site-nav" aria-label="主导航">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="展开导航">
+                    <span class="nav-toggle__line"></span>
+                    <span class="nav-toggle__line"></span>
+                    <span class="nav-toggle__line"></span>
+                </button>
+                <ul id="primary-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="post.html">最新文章</a></li>
+                    <li><button id="themeToggle" type="button">🌙 夜间模式</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__content">
+                <div>
+                    <h1>记录成长、分享灵感</h1>
+                    <p>墨迹博客专注于前端开发、移动应用与创意写作。每周更新原创文章，与热爱技术与表达的你一起探索未知。</p>
+                    <a class="button" href="#latest">查看最新文章</a>
+                </div>
+                <div class="hero__image" role="presentation" aria-hidden="true"></div>
+            </div>
+        </section>
+
+        <section id="latest" class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h2>精选文章</h2>
+                    <a class="section__action" href="post.html">阅读全部</a>
+                </div>
+                <div class="grid">
+                    <article class="card">
+                        <a href="post.html#design-system">
+                            <div class="card__meta">2024年3月 · 设计</div>
+                            <h3>用组件化思维打造统一的设计语言</h3>
+                            <p>组件化不仅是开发流程的改进，更是跨团队协作的桥梁。本文分享建立设计系统的实战经验。</p>
+                            <span class="card__link">阅读全文 →</span>
+                        </a>
+                    </article>
+                    <article class="card">
+                        <a href="post.html#swiftui-effects">
+                            <div class="card__meta">2024年2月 · SwiftUI</div>
+                            <h3>SwiftUI 动画：从入门到沉浸式体验</h3>
+                            <p>通过分层动画和可复用的过渡效果，构建拥有灵动交互的 iOS 应用界面。</p>
+                            <span class="card__link">阅读全文 →</span>
+                        </a>
+                    </article>
+                    <article class="card">
+                        <a href="post.html#ai-writing">
+                            <div class="card__meta">2024年1月 · 创作</div>
+                            <h3>如何让 AI 成为创作搭档</h3>
+                            <p>使用 AI 辅助选题、提纲与润色，仍然需要人类创作者的判断与情感表达。</p>
+                            <span class="card__link">阅读全文 →</span>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="container">
+                <div class="section__header">
+                    <h2>内容专题</h2>
+                    <p>从代码到写作，保持多元视角。</p>
+                </div>
+                <div class="grid grid--topics">
+                    <div class="topic">
+                        <h3>产品与设计</h3>
+                        <p>洞察用户需求，以设计语言表达品牌个性。</p>
+                    </div>
+                    <div class="topic">
+                        <h3>工程与效率</h3>
+                        <p>Swift、Kotlin、前端工程化，持续优化开发体验。</p>
+                    </div>
+                    <div class="topic">
+                        <h3>创意写作</h3>
+                        <p>主题策划、写作技巧与灵感捕捉法，助力内容创作者。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container newsletter">
+                <div>
+                    <h2>订阅墨迹来信</h2>
+                    <p>每月精选灵感与工具，第一时间送达你的邮箱。</p>
+                </div>
+                <form class="newsletter__form" action="#" method="post">
+                    <label class="sr-only" for="email">邮箱地址</label>
+                    <input id="email" name="email" type="email" placeholder="name@example.com" required>
+                    <button type="submit">订阅</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__content">
+            <p>© 2024 墨迹博客 · 用文字与代码连接世界</p>
+            <div class="site-footer__links">
+                <a href="about.html">关于作者</a>
+                <a href="mailto:hello@example.com">联系</a>
+                <a href="post.html#comments">读者反馈</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
